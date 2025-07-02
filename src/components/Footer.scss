@@ -1,0 +1,10 @@
+.header, .footer {
+  background-color: #4683b8;
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark-mode .header,
+body.dark-mode .footer {
+  background-color: #23272f;
+  color: #eee;
+}

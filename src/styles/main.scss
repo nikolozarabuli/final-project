@@ -1,0 +1,67 @@
+@import "variables.scss";
+
+body[data-theme="light"] {
+  background: $light-bg;
+  color: $light-text;
+}
+
+body[data-theme="dark"] {
+  background: $dark-bg;
+  color: $dark-text;
+}
+
+.header, .footer {
+  background: $primary;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.header nav a:last-child {
+  margin-right: 0;
+}
+
+.theme-toggler {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+input[type="text"], input {
+  padding: 0.5rem;
+  min-width: 180px;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+  .header, .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header nav {
+    margin-bottom: 0.5rem;
+  }
+}

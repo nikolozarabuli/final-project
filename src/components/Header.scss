@@ -1,0 +1,31 @@
+.header {
+  background-color: #4683b8;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+
+  nav {
+    display: flex;
+    gap: 1.5rem;
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+body.dark-mode .header {
+  background-color: #23272f;
+  color: #eee;
+
+  nav a {
+    color: #eee;
+  }
+}

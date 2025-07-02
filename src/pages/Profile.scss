@@ -1,0 +1,87 @@
+.profile-container {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background: rgba(255,255,255,0.97);
+  border-radius: 1.3rem;
+  box-shadow: 0 4px 24px rgba(60,60,80,0.13);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1em;
+}
+
+.profile-avatar {
+  width: 84px;
+  height: 84px;
+  background: #90caf9;
+  color: #274472;
+  border-radius: 50%;
+  font-size: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+  user-select: none;
+  box-shadow: 0 2px 12px #90caf931;
+}
+
+.profile-card h2 {
+  margin-bottom: 0.4em;
+  color: #274472;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.profile-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.profile-section label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  color: #355c7d;
+}
+
+.profile-section input,
+.profile-section select {
+  margin-top: 0.3em;
+  padding: 0.37em 0.7em;
+  border-radius: 6px;
+  border: 1px solid #b4d6fa;
+  background: #e3f2fd;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.18s;
+}
+
+.profile-section input:focus,
+.profile-section select:focus {
+  border: 1.5px solid #4683b8;
+}
+
+.profile-note {
+  margin-top: 1.2em;
+  color: #7d8da1;
+  font-size: 0.97em;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 1.4rem 0.7rem;
+    max-width: 98vw;
+  }
+}
